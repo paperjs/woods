@@ -36,8 +36,11 @@ Install:
     npm install woods
 
 Then point your browser to:
-http://localhost:3000/yourwebsite.com/
-http://localhost:3000/yourwebsite.com/projects/
-http://localhost:3000/yourwebsite.com/projects/a-project/
+
+[http://localhost:3000/yourwebsite.com/](http://localhost:3000/yourwebsite.com/)
+
+[http://localhost:3000/yourwebsite.com/projects/](http://localhost:3000/yourwebsite.com/projects/)
+
+[http://localhost:3000/yourwebsite.com/projects/a-project/](http://localhost:3000/yourwebsite.com/projects/a-project/)
 
 We promise to make a better sample site soon. : )
