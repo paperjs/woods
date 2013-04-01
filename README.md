@@ -23,8 +23,9 @@ Features:
 Todo:
 
 *   Make non blocking (search for 'Sync')
-*   Reload the page automatically when Woods is reloaded
+*   Live Reload: Reload the browser when Woods is reloaded
 *   Actually export files
 *   S3 upload
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
 *   Thumbnails
+*   Tests
