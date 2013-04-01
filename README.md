@@ -3,7 +3,7 @@ Woods
 
 a Node.js based static site generator inspired by [Kirby](http://getkirby.com/) & [Stacey](http://www.staceyapp.com/).
 
-Note: early days yet. Happy to receive your feedback.
+Please note: early days yet, expect things to be broken. Happy to receive your feedback.
 
 Terminology:
 
