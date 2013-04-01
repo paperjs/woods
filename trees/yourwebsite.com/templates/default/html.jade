@@ -1,0 +1,12 @@
+!!! 5
+html(lang='en')  
+  head
+    meta(name="description", content=branch.data.description)
+    link(rel="stylesheet", href=base + 'static/styles/styles.css')
+title Example Website - #{branch.data.title || branch.name}  
+body
+  nav
+    !{branch.renderTemplate('menu')}
+  div#main
+    div#content
+      !{branch.renderTemplate('body')}

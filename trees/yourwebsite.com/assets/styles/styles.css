@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background: #fff;
+  margin:50px 0px; padding:0px;
+  text-align:center;
+}
+
+#main {
+  margin:0px auto;
+  text-align:left;
+  width: 960px;
+}
+
+#content {
+	width: 600px;
+}
+
+#content p {
+	padding-left: 2em;
+}
+
+.excerpt {
+	margin: 1em 0 1em;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.excerpt p {
+	padding-left: 0em !important;
+}
