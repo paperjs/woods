@@ -28,3 +28,4 @@ Todo:
 *   S3 upload
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
 *   Thumbnails
+*   Tests
