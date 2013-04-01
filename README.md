@@ -1,27 +1,29 @@
 Woods
 =====
 
-a Node.js based static site generator inspired by [Kirby](http://getkirby.com/) & [Stacey](http://www.staceyapp.com/).
+a Node.js file based CMS inspired by [Kirby](http://getkirby.com/) & [Stacey](http://www.staceyapp.com/).
 
 Please note: early days yet, expect things to be broken. Happy to receive your feedback.
 
 Terminology:
 
-*   A Tree is a site (Do we need multiple sites? Hm.)
+*   A Tree is a site (Do we even need multiple sites? Hm.)
 *   A Branch is a page, which can contain other Branches
 *   Leaves are fields taken from Markdown files with optional parse functions
 
 Features:
 
 *   DOM like structure with parents and children
-*   Uses express to serve locally on localhost:3000
+*   Type based 
+*   Uses Express to serve content locally on localhost:3000
 *   Reloads automatically whenever a content or template file is changed
-*   Jade templates
+*   Page type specific Jade templates
+*   NoDB
 
 Todo:
 
 *   Reload the page automatically when Woods is reloaded
-*   Export files
+*   Actually export files
 *   S3 upload
 *   Custom tags
 *   Thumbnails
