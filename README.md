@@ -14,7 +14,7 @@ Terminology:
 Features:
 
 *   DOM like structure with parents and children
-*   Type based 
+*   Type based Jade templates
 *   Uses Express to serve content locally on localhost:3000
 *   Reloads automatically whenever a content or template file is changed
 *   Page type specific Jade templates
