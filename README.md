@@ -14,7 +14,6 @@ Terminology:
 Features:
 
 *   DOM like structure with parents and children
-*   Type based Jade templates
 *   Uses Express to serve content locally on localhost:3000
 *   Reloads automatically whenever a content or template file is changed
 *   Page type specific Jade templates
@@ -22,7 +21,9 @@ Features:
 
 Todo:
 
+*   Make a relatively decent example site
 *   Make non blocking (search for 'Sync')
+*   Decide if we need to make this less memory hungry.
 *   Live Reload: Reload the browser when Woods is reloaded
 *   Actually export files
 *   S3 upload
