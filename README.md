@@ -22,6 +22,7 @@ Features:
 
 Todo:
 
+*   Make a relatively decent example site
 *   Make non blocking (search for 'Sync')
 *   Live Reload: Reload the browser when Woods is reloaded
 *   Actually export files
