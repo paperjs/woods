@@ -3,6 +3,14 @@ Woods
 
 Woods is a static site generator inspired by [Kirby](http://getkirby.com/) & [Stacey](http://www.staceyapp.com/).
 
+Note: early days yet. Happy to receive your feedback.
+
+Terminology:
+
+*   A Tree is a site (Do we need multiple sites? Hm.)
+*   A Branch is a page, which can contain other Branches
+*   Leaves are fields taken from Markdown files with optional parse functions
+
 Features:
 
 *   DOM like structure with parents and children
@@ -13,8 +21,7 @@ Features:
 Todo:
 
 *   Reload the page automatically when Woods is reloaded
-*   Generate & upload html to S3
+*   Export files
+*   S3 upload
 *   Custom tags
 *   Thumbnails
-
-Lots of work left to be done.
