@@ -2,9 +2,9 @@
 html(lang='en')  
   head
     meta(name="description", content=page.data.description)
-title Example Website - #{page.data.title || page.name}  
     link(rel="stylesheet", href=site.url + '/static/styles/skeleton.css')
     link(rel="stylesheet", href=site.url + '/static/styles/styles.css')
+title Example Website - #{page.getTitle()}  
 body
   div.container
     div.three.columns
