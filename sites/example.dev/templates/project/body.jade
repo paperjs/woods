@@ -1,0 +1,3 @@
+h1 #{branch.data.title}
+!{parse(branch.data.text || '', branch)}
+!{branch.parent.renderTemplate('menu')}
