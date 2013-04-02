@@ -27,7 +27,7 @@ Todo:
 Install:
 
     npm install woods
-    cd woods
+    cd node_modules/woods
     node ./
 
 Then point your browser to:
