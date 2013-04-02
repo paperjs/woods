@@ -5,12 +5,6 @@ a Node.js file based CMS inspired by [Kirby](http://getkirby.com/) & [Stacey](ht
 
 Please note: early days yet, expect things to be broken. Happy to receive your feedback.
 
-Terminology:
-
-*   A Tree is a site (Do we even need multiple sites? Hm.)
-*   A Branch is a page, which can contain other Branches
-*   Leaves are fields taken from Markdown files with optional parse functions
-
 Features:
 
 *   DOM like structure with parents and children

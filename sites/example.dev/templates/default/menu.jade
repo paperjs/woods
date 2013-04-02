@@ -1,6 +1,6 @@
 ul.menu
   li
-    a(href=branch.urlPath) #{branch.data.title}
-  for child in branch.children
+    a(href=page.urlPath) #{page.data.title}
+  for child in page.children
     li
       a(href=child.urlPath) #{child.data.title}
