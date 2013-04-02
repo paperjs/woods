@@ -1,5 +1,5 @@
 for child in page.children
   div.row
     h2
-      a(href=child.urlPath) #{child.data.title}
+      a(href=child.url) #{child.getTitle()}
     div #{child.data.excerpt}

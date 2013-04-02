@@ -1,6 +1,6 @@
 ul.menu
   li
-    a(href=page.urlPath) #{page.data.title}
+    a(href=page.url) #{page.getTitle()}
   for child in page.children
     li
-      a(href=child.urlPath) #{child.data.title}
+      a(href=child.url) #{child.getTitle()}
