@@ -9,7 +9,7 @@ Features:
 
 *   DOM like structure with parents and children
 *   Uses Express to serve content locally on localhost:3000
-*   Reloads automatically whenever a content or template file is changed
+*   Basic [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) support: Reloads the browser whenever you edit a file
 *   Page type specific Jade templates
 *   NoDB
 
@@ -18,7 +18,6 @@ Todo:
 *   Make a relatively decent example site
 *   Make non blocking (search for 'Sync')
 *   Decide if we need to make this less memory hungry.
-*   Live Reload: Reload the browser when Woods is reloaded
 *   Actually export files
 *   S3 upload
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
