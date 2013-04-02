@@ -4,7 +4,7 @@ title: Projects
 ----
 text: Welcome to the projects page.
 
-The menu below is generated from the numbered folders located in: woods/sites/example.site/content/02-projects/
+The menu above is generated from the numbered folders located in: woods/sites/example.site/content/02-projects/
 
 The markdown file related to this page (/woods/example.site/content/02-projects/content.md) declares that this page is of type 'projects'.
 

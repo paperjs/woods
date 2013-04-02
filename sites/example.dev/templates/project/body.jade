@@ -1,3 +1,6 @@
+!{page.parent.renderTemplate('project-list')}
+hr
 h1 #{page.getTitle()}
 !{parse(page.data.text || '', page)}
-!{page.parent.renderTemplate('project-list')}
+for image in page.images
+  img(src=page.getResourceUrl(image))
