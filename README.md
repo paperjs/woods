@@ -34,4 +34,6 @@ Then point your browser to:
 
 [http://localhost:3000/example.dev/](http://localhost:3000/example.dev/)
 
+(Don't forget to turn on your [Live Reload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) while editing)
+
 We promise to make a better sample site soon. : )
