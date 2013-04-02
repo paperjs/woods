@@ -34,6 +34,8 @@ Todo:
 Install:
 
     npm install woods
+    cd woods
+    node ./
 
 Then point your browser to:
 
