@@ -1,6 +1,6 @@
-!{page.parent.renderTemplate('project-list')}
+!{page.parent.render('project-list')}
 hr
 h1 #{page.getTitle()}
-!{markdown(page.text || '', page)}
+!{markdown(page.content)}
 for image in page.images
-  img(src=page.getResourceUrl(image))
+  img(src=page.getUrl(image))

@@ -9,7 +9,8 @@
     "superagent": "~0.14.0",
     "tiny-lr": "0.0.4",
     "node-watch": "~0.3.1",
-    "to-camel-case": "~0.1.0"
+    "to-camel-case": "~0.1.0",
+    "yaml-front-matter": "~1.0.3",
     "marked": "~0.2.8"
   },
   "devDependencies": {},

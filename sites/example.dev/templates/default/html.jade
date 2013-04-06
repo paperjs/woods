@@ -8,6 +8,6 @@ html(lang='en')
 body
   div.container
     div.three.columns
-      !{site.getPageByUrl('').renderTemplate('menu')}
+      !{site.root.render('menu')}
     div.six.columns
-      !{page.renderTemplate('body')}
+      !{page.render('body')}
