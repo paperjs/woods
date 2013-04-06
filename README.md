@@ -16,7 +16,6 @@ Features:
 Todo:
 
 *   Make a relatively decent example site
-*   Make non blocking (search for 'Sync')
 *   Decide if we need to make this less memory hungry.
 *   Actually export files
 *   S3 upload
