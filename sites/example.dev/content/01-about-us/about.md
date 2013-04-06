@@ -1,8 +1,7 @@
-type: About
-----
+---
 title: About
-----
-text: This is the about page.
+---
+This is the about page.
 
 The content of this page can be found at /woods/example.site/content/01-about-us/content.md
 

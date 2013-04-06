@@ -4,10 +4,10 @@ module.exports = function(string, page) {
 	if (!names.length)
 		return;
 	var site = page.site,
-		siteTags = site.data.tags,
-		pageTags = page.data.tags;
-	if (!siteTags) siteTags = site.data.tags = [];
-	if (!pageTags) pageTags = page.data.tags = [];
+		siteTags = site.tags,
+		pageTags = page.tags;
+	if (!siteTags) siteTags = site.tags = [];
+	if (!pageTags) pageTags = page.tags = [];
 	names.forEach(function(name) {
 		// Note: site.tags is being treated
 		// as an object literal and array:

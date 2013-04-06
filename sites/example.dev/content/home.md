@@ -1,6 +1,7 @@
+---
 title: Home
-----
-text: Welcome to the example site.
+---
+Welcome to the example site.
 
 The content of this page can be found at /woods/example.site/content/content.md
 
