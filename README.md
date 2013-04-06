@@ -7,7 +7,7 @@ Please note: early days yet, expect things to be broken. Happy to receive your f
 
 Features:
 
-*   DOM like structure with parents and children
+*   Tree structure with parents and children
 *   Uses Express to serve content locally on localhost:3000
 *   Basic [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) support: Reloads the browser whenever you edit a file
 *   Page type specific Jade templates
