@@ -1,4 +1,4 @@
-for child in root.children.projects.children
+for child in page.get('/projects').children
   div.row
     h2
       a(href=child.url) #{child.title}
