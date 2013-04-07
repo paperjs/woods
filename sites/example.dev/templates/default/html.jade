@@ -2,12 +2,12 @@
 html(lang='en')  
   head
     meta(name="description", content=page.description)
-    link(rel="stylesheet", href=site.url + '/static/styles/skeleton.css')
-    link(rel="stylesheet", href=site.url + '/static/styles/styles.css')
+    link(rel="stylesheet", href=site.url + '/assets/styles/skeleton.css')
+    link(rel="stylesheet", href=site.url + '/assets/styles/styles.css')
     title Example Website - #{page.title}  
 body
   div.container
     div.three.columns
-      !{render('menu', root)}
+      !=render('menu', root)
     div.six.columns
-      !{render('body')}
+      !=render('body')

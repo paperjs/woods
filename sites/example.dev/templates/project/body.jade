@@ -1,5 +1,5 @@
-!{render('project-list')}
+!=render('project-list')
 hr
-!{markdown(page.content)}
+!=markdown(page.content)
 for image in page.images
-  !{image.getHtml(640)}
+  !=image.thumb({cropWidth: 100, cropHeight: 200, width: 200})
