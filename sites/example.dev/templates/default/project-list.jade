@@ -5,5 +5,4 @@ for child in page.get('/projects').children
         a.active(href=child.url) #{child.title}
       else
         a(href=child.url) #{child.title}
-    p #{isActive(child)}
     div #{child.excerpt}

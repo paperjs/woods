@@ -1,6 +1,5 @@
 !{render('project-list')}
 hr
-h1 #{page.title}
 !{markdown(page.content)}
 for image in page.images
   img(src=page.getUrl(image))

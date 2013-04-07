@@ -6,3 +6,7 @@ body {
   margin: 0;
   padding:50px;
 }
+
+.active {
+	font-weight: bold;
+}
