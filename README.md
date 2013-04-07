@@ -11,6 +11,7 @@ Features:
 *   Uses Express to serve content locally on localhost:3000
 *   Basic [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) support: Reloads the browser whenever you edit a file
 *   Page type specific Jade templates
+*   Resize and crop images
 *   NoDB
 
 Todo:
@@ -20,7 +21,6 @@ Todo:
 *   Actually export files
 *   S3 upload
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
-*   Thumbnails
 *   Tests
 
 Install:

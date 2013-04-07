@@ -1,0 +1,10 @@
+2013.04.07 Version 0.0.4
+
+*  Created TemplateParam prototype for template access of values.
+*  Fixed problem in Page#get where errors were being thrown if a page was not found
+*  Removed unused removeRoute function in site
+*  Gave templates access to request and query objects
+*  Implemented Site#modified
+*  Implemented File#dimensions, File#width, File#height & File#html()
+*  Implemnted exporting of thumbnails through File#exportThumbnail(param) & File#thumb(param)
+*  Implemented cropping of thumbnails through optional param.cropWidth, param.cropHeight & param.gravity parameters.
