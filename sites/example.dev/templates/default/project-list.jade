@@ -1,5 +1,9 @@
 for child in page.get('/projects').children
   div.row
     h2
-      a(href=child.url) #{child.title}
+      if isActive(child)
+        a.active(href=child.url) #{child.title}
+      else
+        a(href=child.url) #{child.title}
+    p #{isActive(child)}
     div #{child.excerpt}
