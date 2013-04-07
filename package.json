@@ -1,5 +1,8 @@
 {
   "name": "woods",
+  "bin": {
+    "woods": "bin/woods"
+  },
   "version": "0.0.4",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +16,8 @@
     "marked": "~0.2.8",
     "mime": "~1.2.9",
     "gm": "~1.8.2",
-    "node_hash": "~0.2.0"
+    "node_hash": "~0.2.0",
+    "commander": "~1.1.1"
   },
   "devDependencies": {},
   "repository": {

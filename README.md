@@ -25,13 +25,22 @@ Todo:
 
 Install:
 
-    npm install woods
-    cd node_modules/woods
-    node ./
+    npm install woods -g
+    woods
 
-Then point your browser to:
-
+Then point your browser to: 
 [http://localhost:3000/example.dev/](http://localhost:3000/example.dev/)
+
+Usage:
+
+    Usage: woods [directory]
+
+    Options:
+
+      -h, --help                   output usage information
+      -V, --version                output the version number
+      -p, --port [3000]            The server port
+      -d, --directory [directory]  The sites directory
 
 (Don't forget to turn on your [Live Reload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) while editing)
 
