@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+	path = require('path'),
+	fs = require('fs'),
+	woods = require('../index');
+
+// usage
+
+program
+	.version(require('../package').version)
+	.usage('[directory]')
+	.option('-p, --port [3000]', 'The server port', parseInt)
+	.option('-d, --directory [directory]', 'The sites directory')
+	.option('-e, --export [directory]', 'The directory to export the sites to')
+   .parse(process.argv);
+
+if (!program.directory)
+	console.log('No sites directory provided. Serving example site:');
+
+var uri = path.resolve(__dirname, program.directory || '../sites/');
+fs.exists(uri, function(exists) {
+	if (exists) {
+		woods(uri, program.port);
+	} else {
+		console.log('Directory not found: ', uri);
+		process.exit();
+	}
+});
