@@ -1,8 +1,7 @@
-for child in page.get('/projects').children
-  div.row
-    h2
-      if isActive(child)
-        a.active(href=child.url) #{child.title}
-      else
-        a(href=child.url) #{child.title}
-    div #{child.excerpt}
+p: b !{page.type == 'projects' ? 'Projects:' : 'Other projects:'}
+ul.menu
+  for child in page.get('/projects').children
+    if isActive(child)
+      li: a.active(href=child.url) #{child.title}
+    else
+      li: a(href=child.url) #{child.title}

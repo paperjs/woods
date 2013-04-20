@@ -1,0 +1,7 @@
+if (page.type == 'project')
+  !=render('project-list')
+if (page.related)
+  p Related pages:
+  ul.menu
+    for relatedPage in page.related
+      li: a(href=relatedPage.url): !=relatedPage.title
