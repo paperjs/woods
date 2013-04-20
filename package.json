@@ -18,7 +18,8 @@
     "node_hash": "~0.2.0",
     "commander": "~1.1.1",
     "woods-parsedown": "0.0.2",
-    "mkdirp": "~0.3.5"
+    "mkdirp": "~0.3.5",
+    "needless": "~0.1.1"
   },
   "devDependencies": {
     "should": "~1.2.2"
