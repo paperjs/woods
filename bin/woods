@@ -21,7 +21,7 @@ if (!program.directory)
 var uri = path.resolve(__dirname, program.directory || '../sites/');
 fs.exists(uri, function(exists) {
 	if (exists) {
-		woods(uri, program.port);
+		woods.initialize(uri, program.port);
 	} else {
 		console.log('Directory not found: ', uri);
 		process.exit();
