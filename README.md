@@ -7,20 +7,21 @@ Please note: early days yet, expect things to be broken. Happy to receive your f
 
 Features:
 
-*   Tree structure with parents and children
+*   No database
+*   Tree structure with parents and children defined by files and directories in your site directories
 *   Markdown content files where any new line starting with 'propertyname:' defines a property on the page
-*   Uses Express to serve content locally on localhost:3000
-*   [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei): Automatically reloads the browser whenever you edit content file / static asset or template
+*   Listens to file-system changes and rebuilds the site if needed
+*   [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei): Automatically reloads the browser whenever you edit a content file, static asset or template
 *   Page type specific Jade templates
 *   Thumbnails: resizing, max width/height, cropping
 *   Pagination
+*   Express web server for local testing or actual serving of content
 *   S3 syncing
-*   NoDB
 
 Todo:
 
-*   Make a relatively decent example site
 *   Decide if we need to make this less memory hungry.
+*   Cache file contents for site reloading.
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
 *   Tests
 
