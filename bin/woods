@@ -12,7 +12,7 @@ program
 	.usage('[directory]')
 	.option('-p, --port [3000]', 'The server port', parseInt)
 	.option('-d, --directory [directory]', 'The sites directory')
-	.option('-e, --export [directory]', 'The directory to export the sites to')
+	.option('-s, --sync [site-name]', 'Sync site to s3')
    .parse(process.argv);
 
 if (!program.directory)
@@ -21,7 +21,24 @@ if (!program.directory)
 var uri = path.resolve(__dirname, program.directory || '../sites/');
 fs.exists(uri, function(exists) {
 	if (exists) {
-		woods.initialize(uri, program.port);
+		woods.initialize(uri, program.port, function() {
+			if (program.sync) {
+				var site = woods.sites[program.sync];
+				if (!site) {
+					console.log('Site not found: ' + program.sync);
+					process.exit();
+				}
+				console.log('Exporting: ' + program.sync);
+				site.syncS3(function() {
+					console.log('Done syncing: ' + program.sync);
+					process.exit();
+				});
+			} else {
+				woods.sites.forEach(function(site) {
+					console.log('Serving', path.join(woods.directory, site.directory), 'on ' + site.url);
+				});
+			}
+		});
 	} else {
 		console.log('Directory not found: ', uri);
 		process.exit();
