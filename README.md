@@ -10,7 +10,7 @@ Features:
 *   Tree structure with parents and children
 *   Markdown content files where any new line starting with 'propertyname:' defines a property on the page
 *   Uses Express to serve content locally on localhost:3000
-*   Basic [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) support: Reloads the browser whenever you edit a file
+*   [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei): Automatically reloads the browser whenever you edit content file / static asset or template
 *   Page type specific Jade templates
 *   Thumbnails: resizing, max width/height, cropping
 *   Pagination
