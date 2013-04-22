@@ -8,18 +8,19 @@ Please note: early days yet, expect things to be broken. Happy to receive your f
 Features:
 
 *   Tree structure with parents and children
+*   Markdown content files where any new line starting with 'propertyname:' defines a property on the page
 *   Uses Express to serve content locally on localhost:3000
 *   Basic [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) support: Reloads the browser whenever you edit a file
 *   Page type specific Jade templates
-*   Resize and crop images
+*   Thumbnails: resizing, max width/height, cropping
+*   Pagination
+*   S3 syncing
 *   NoDB
 
 Todo:
 
 *   Make a relatively decent example site
 *   Decide if we need to make this less memory hungry.
-*   Actually export files
-*   S3 upload
 *   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
 *   Tests
 
