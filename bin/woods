@@ -11,36 +11,32 @@ program
 	.version(require('../package').version)
 	.usage('[directory]')
 	.option('-p, --port [3000]', 'The server port', parseInt)
-	.option('-d, --directory [directory]', 'The sites directory')
-	.option('-s, --sync [site-name]', 'Sync site to s3')
+	.option('-s, --sync', 'Sync site to s3')
    .parse(process.argv);
 
-if (!program.directory)
-	console.log('No sites directory provided. Serving example site:');
+if (!program.args.length)
+	console.log('No site directory provided. Serving example site:');
 
-var uri = path.resolve(__dirname, program.directory || '../sites/');
+var uri = path.resolve(__dirname, program.args[0] || '../example');
 fs.exists(uri, function(exists) {
 	if (exists) {
 		woods.initialize(uri, program.port, function() {
 			if (program.sync) {
-				var site = woods.sites[program.sync];
-				if (!site) {
+				if (!woods.site) {
 					console.log('Site not found: ' + program.sync);
 					process.exit();
 				}
 				console.log('Exporting: ' + program.sync);
-				site.syncS3(function() {
+				woods.site.syncS3(function() {
 					console.log('Done syncing: ' + program.sync);
 					process.exit();
 				});
 			} else {
-				woods.sites.forEach(function(site) {
-					console.log('Serving', path.join(woods.directory, site.directory), 'on ' + site.url);
-				});
+				console.log('Serving', woods.site.directory, 'on ' + woods.url);
 			}
 		});
 	} else {
-		console.log('Directory not found: ', uri);
+		console.log('Site directory not found: ', uri);
 		process.exit();
 	}
 });
