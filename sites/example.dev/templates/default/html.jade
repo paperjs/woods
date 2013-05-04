@@ -8,8 +8,8 @@ html(lang='en')
 body
   div.container
     div.three.columns
-      !=render('menu', root)
+      !=template('menu', root)
     div.six.columns
-      !=render('body')
+      !=template('body')
     div.three.columns
-      !=render('related')
+      !=template('related')
