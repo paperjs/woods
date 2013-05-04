@@ -20,23 +20,19 @@ if (!program.args.length)
 var uri = path.resolve(__dirname, program.args[0] || '../example');
 fs.exists(uri, function(exists) {
 	if (exists) {
-		woods.initialize(uri, program.port, function() {
+		return woods.initialize(uri, program.port, function(err) {
+			if (err) throw err;
 			if (program.sync) {
-				if (!woods.site) {
-					console.log('Site not found: ' + program.sync);
-					process.exit();
-				}
-				console.log('Exporting: ' + program.sync);
-				woods.site.syncS3(function() {
-					console.log('Done syncing: ' + program.sync);
+				console.log('Syncing site to S3');
+				return woods.site.syncS3(function(err) {
+					console.log(err ? err : 'Done syncing: ' + woods.site.directory);
 					process.exit();
 				});
-			} else {
-				console.log('Serving', woods.site.directory, 'on ' + woods.url);
 			}
+			console.log('Serving', woods.site.directory, 'on ' + woods.url);
 		});
-	} else {
-		console.log('Site directory not found: ', uri);
-		process.exit();
 	}
+
+	console.log('Site directory not found: ', uri);
+	process.exit();
 });
