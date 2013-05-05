@@ -21,7 +21,8 @@
     "mkdirp": "~0.3.5",
     "needless": "~0.1.1",
     "hash_file": "0.0.8",
-    "array.js": "~0.2.0"
+    "array.js": "~0.2.0",
+    "knox": "~0.7.1"
   },
   "devDependencies": {
     "should": "~1.2.2"
