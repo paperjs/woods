@@ -17,7 +17,7 @@ program
 if (!program.args.length)
 	console.log('No site directory provided. Serving example site:');
 
-var uri = path.resolve(__dirname, program.args[0] || '../example');
+var uri = program.args[0] || path.resolve(__dirname, '../example');
 fs.exists(uri, function(exists) {
 	if (exists) {
 		return woods.initialize(uri, program.port, function(err) {
