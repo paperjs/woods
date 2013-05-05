@@ -1,3 +1,19 @@
+2013.05.05 Version 0.0.6
+
+* Make woods work with one site at a time
+* Add 'contentExtension' setting
+* Modules in 'helpers' directory are added to TemplateParam for access within templates
+* Rename 'render' to 'template' for template rendering from within templates
+* Add inGroupsOf helper function to Collection
+* grayscale option for thumbnails
+* Add File#created and File#modified
+* Collections for Page#children, Page#files etc.
+* Pagination
+* S3 syncing
+* Site settings through settings.md file
+* Create thumbnails directory when missing
+* Break out content parsing into woods-parsedown module
+
 2013.04.07 Version 0.0.5
 
 * Implemented woods binary and updated installation instructions
