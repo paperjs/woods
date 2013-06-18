@@ -16,7 +16,8 @@ Features:
 *   Thumbnails: resizing, max width/height, cropping
 *   Pagination
 *   Express web server for local testing or actual serving of content
-*   S3 syncing
+*   Sync site to S3 bucket
+*	Export site to directory
 
 Todo:
 
