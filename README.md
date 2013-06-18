@@ -36,13 +36,14 @@ Then point your browser to:
 Usage:
 
     Usage: woods [directory]
-
+    
     Options:
-
-    -h, --help         output usage information
-    -V, --version      output the version number
-    -p, --port [3000]  The server port
-    -s, --sync         Sync site to s3
+    
+      -h, --help                output usage information
+      -V, --version             output the version number
+      -p, --port [3000]         The server port
+      -s, --sync                Sync site to s3
+      -e, --export [directory]  Export site to directory
 
 (Don't forget to turn on your [Live Reload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) while editing)
 
