@@ -31,7 +31,7 @@ Install:
     woods
 
 Then point your browser to: 
-[http://localhost:3000/example.dev/](http://localhost:3000/)
+[http://localhost:3000/](http://localhost:3000/)
 
 Usage:
 
