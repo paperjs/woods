@@ -12,6 +12,7 @@ program
 	.usage('[directory]')
 	.option('-p, --port [3000]', 'The server port', parseInt)
 	.option('-s, --sync', 'Sync site to s3')
+	.option('-e, --export [directory]', 'Export site to directory')
    .parse(process.argv);
 
 if (!program.args.length)
@@ -25,7 +26,14 @@ fs.exists(uri, function(exists) {
 			if (program.sync) {
 				console.log('Syncing site to S3');
 				return woods.site.syncS3(function(err) {
-					console.log(err ? err : 'Done syncing: ' + woods.site.directory);
+					console.log(err ? err : 'Sync complete.');
+					process.exit();
+				});
+			}
+			if (program.export) {
+				console.log('Exporting site');
+				return woods.site.publish(program.export === true ? null : program.export, function(err) {
+					console.log(err ? err : 'Export complete.');
 					process.exit();
 				});
 			}
