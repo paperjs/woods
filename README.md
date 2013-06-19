@@ -21,10 +21,8 @@ Features:
 
 Todo:
 
-*   Decide if we need to make this less memory hungry.
-*   Cache file contents for site reloading.
-*   Custom tags (using [Cheerio](https://github.com/MatthewMueller/cheerio)?)
 *   Tests
+*   FTP syncing
 
 Install:
 
