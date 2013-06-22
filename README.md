@@ -5,7 +5,7 @@ a Node.js file based CMS inspired by [Kirby](http://getkirby.com/) & [Stacey](ht
 
 Please note: early days yet, expect things to be broken. Happy to receive your feedback.
 
-Features:
+### Features
 
 *   No database
 *   Tree structure with parents and children defined by files and directories in your site directory
@@ -19,12 +19,16 @@ Features:
 *   Sync site to S3 bucket
 *	Export site to directory
 
-Todo:
+### Todo
 
 *   Tests
 *   FTP syncing
 
-Install:
+### Requirements
+
+Woods requires Graphics Magick to be installed on your system: http://www.graphicsmagick.org/
+
+### Installation
 
     npm install woods -g
     woods
@@ -32,7 +36,7 @@ Install:
 Then point your browser to: 
 [http://localhost:3000/](http://localhost:3000/)
 
-Usage:
+### Usage
 
     Usage: woods [directory]
     
