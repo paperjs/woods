@@ -22,7 +22,8 @@
     "needless": "~0.1.1",
     "hash_file": "0.0.8",
     "array.js": "~0.2.0",
-    "knox": "~0.7.1"
+    "knox": "~0.7.1",
+    "uslug": "~1.0.3"
   },
   "devDependencies": {
     "should": "~1.2.2"
