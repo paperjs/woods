@@ -23,7 +23,8 @@
     "hash_file": "0.0.8",
     "array.js": "~0.2.0",
     "knox": "~0.7.1",
-    "slugg": "~0.1.1"
+    "slugg": "~0.1.1",
+    "natural-compare-lite": "0.4.6"
   },
   "devDependencies": {
     "should": "~1.2.2"
