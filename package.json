@@ -7,27 +7,24 @@
 	"main": "index.js",
 	"dependencies": {
 		"async": "~0.2.6",
-		"express": "~3.1.0",
+		"express": "~3.5.0",
 		"jade": "~0.30.0",
-		"superagent": "~0.14.0",
-		"tiny-lr": "0.0.4",
+		"superagent": "~0.17.0",
+		"tiny-lr": "~0.0.5",
 		"node-watch": "~0.3.1",
-		"marked": "~0.2.8",
+		"marked": "~0.3.2",
 		"mime": "~1.2.9",
 		"gm": "~1.8.2",
 		"node_hash": "~0.2.0",
-		"commander": "~1.1.1",
+		"commander": "~2.1.0",
 		"woods-parsedown": "0.0.3",
 		"mkdirp": "~0.3.5",
 		"needless": "~0.1.1",
-		"hash_file": "0.0.8",
+		"hash_file": "~0.1.1",
 		"array.js": "~0.2.0",
 		"knox": "~0.7.1",
 		"slugg": "~0.1.1",
-		"natural-compare-lite": "0.4.6"
-	},
-	"devDependencies": {
-		"should": "~1.2.2"
+		"natural-compare-lite": "~0.4.6"
 	},
 	"repository": {
 		"type": "git",
