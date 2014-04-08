@@ -13,7 +13,7 @@ program
 	.option('-p, --port [3000]', 'The server port', parseInt)
 	.option('-s, --sync', 'Sync site to s3')
 	.option('-e, --export [directory]', 'Export site to directory')
-   .parse(process.argv);
+	.parse(process.argv);
 
 if (!program.args.length)
 	console.log('No site directory provided. Serving example site:');
