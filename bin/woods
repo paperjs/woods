@@ -21,7 +21,7 @@ if (!program.args.length)
 var uri = program.args[0] || path.resolve(__dirname, '../example');
 fs.exists(uri, function(exists) {
 	if (exists) {
-		return woods.initialize(uri, program.port, !program.export, function(err) {
+		return woods.initialize(uri, program.port, !(program.export || program.sync), function(err) {
 			if (err) throw err;
 			if (program.sync) {
 				console.log('Syncing site to S3');
