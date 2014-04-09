@@ -21,7 +21,7 @@
     "needless": "~0.1.1",
     "hash_file": "~0.1.1",
     "array": "~0.4.3",
-    "knox": "~0.7.1",
+    "knox": "~0.8.9",
     "slugg": "~0.1.1",
     "natural-compare-lite": "~0.4.6"
   },
