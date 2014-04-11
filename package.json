@@ -20,9 +20,7 @@
     "array": "~0.4.3",
     "knox": "~0.8.9",
     "slugg": "~0.1.1",
-    "natural-compare-lite": "~0.4.6"
-  },
-  "devDependencies": {
+    "natural-compare-lite": "~0.4.6",
     "tiny-lr": "~0.0.5",
     "superagent": "~0.17.0"
   },
