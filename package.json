@@ -3,7 +3,7 @@
   "bin": {
     "woods": "bin/woods"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "dependencies": {
     "async": "~0.2.6",
