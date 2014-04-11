@@ -1,3 +1,7 @@
+2014.04.11 Version 0.0.8
+
+* Remove tiny-lr / super agent from dev dependencies again.
+
 2014.04.11 Version 0.0.7
 
 * Implement exporting of site to directory.
