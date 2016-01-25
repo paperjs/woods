@@ -12,7 +12,7 @@
     "node-watch": "^0.3.1",
     "marked": "^0.3.2",
     "mime": "^1.2.9",
-    "gm": "^1.8.2",
+    "gm": "^1.21.1",
     "commander": "^2.1.0",
     "woods-parsedown": "0.0.4",
     "mkdirp": "^0.5.0",
