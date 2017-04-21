@@ -1,7 +1,7 @@
 {
   "name": "woods",
   "version": "0.1.1",
-  "description": "The Swiss Army Knife of Vector Graphics Scripting, packaged for Node.js with rendering to Node-Canvas",
+  "description": "Node.js file based CMS inspired by Kirby & Stacey.",
   "license": "MIT",
   "repository": {
     "type": "git",
