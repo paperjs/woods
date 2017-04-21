@@ -1,9 +1,17 @@
 {
   "name": "woods",
+  "version": "0.1.1",
+  "description": "The Swiss Army Knife of Vector Graphics Scripting, packaged for Node.js with rendering to Node-Canvas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paperjs/woods.git"
+  },
+  "bugs": "https://github.com/paperjs/woods/issues",
+  "author": "Jonathan Puckey",
   "bin": {
     "woods": "bin/woods"
   },
-  "version": "0.1.0",
   "main": "index.js",
   "dependencies": {
     "array": "^0.4.3",
@@ -23,11 +31,5 @@
     "superagent": "^3.5.2",
     "tiny-lr": "^1.0.3",
     "woods-parsedown": "^0.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/studiomoniker/woods.git"
-  },
-  "author": "Jonathan Puckey",
-  "license": "MIT"
+  }
 }
