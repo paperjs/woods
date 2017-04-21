@@ -1,6 +1,6 @@
 {
   "name": "woods",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js file based CMS inspired by Kirby & Stacey.",
   "license": "MIT",
   "repository": {
